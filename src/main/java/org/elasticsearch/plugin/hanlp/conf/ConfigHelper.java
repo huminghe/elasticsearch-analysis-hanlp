@@ -47,6 +47,44 @@ public class ConfigHelper {
         setEnableTraditionalChineseMode(false);
     }};
 
+    public static final HanLPConfig STORE_CONFIG = new HanLPConfig(){{
+        setAlgorithm("viterbi");
+        setEnableIndexMode(false);
+        setCustomDictionaryPath("");
+        setEnableCustomDictionary(true);
+        setEnableCustomDictionaryForcing(false);
+
+        setEnableStopWord(false);
+        setStopWordDictionaryPath("");
+
+        setEnableNameRecognize(true);
+        setEnableJapaneseNameRecognize(false);
+        setEnableTranslatedNameRecognize(true);
+        setEnableNumberQuantifierRecognize(true);
+        setEnableOrganizationRecognize(true);
+        setEnablePlaceRecognize(true);
+        setEnableTraditionalChineseMode(false);
+    }};
+
+    public static final HanLPConfig SEARCH_CONFIG = new HanLPConfig(){{
+        setAlgorithm("viterbi");
+        setEnableIndexMode(true);
+        setCustomDictionaryPath("");
+        setEnableCustomDictionary(true);
+        setEnableCustomDictionaryForcing(false);
+
+        setEnableStopWord(false);
+        setStopWordDictionaryPath("");
+
+        setEnableNameRecognize(true);
+        setEnableJapaneseNameRecognize(false);
+        setEnableTranslatedNameRecognize(true);
+        setEnableNumberQuantifierRecognize(true);
+        setEnableOrganizationRecognize(true);
+        setEnablePlaceRecognize(true);
+        setEnableTraditionalChineseMode(false);
+    }};
+
     public static final HanLPConfig SMART_CONFIG = new HanLPConfig(){{
         setAlgorithm("viterbi");
         setEnableIndexMode(false);

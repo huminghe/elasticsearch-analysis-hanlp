@@ -55,6 +55,14 @@ public class HanLPTokenizerFactory extends AbstractTokenizerFactory {
         return new HanLPTokenizerFactory(indexSettings, env, name, settings, ConfigHelper.CRF_CONFIG);
     }
 
+    public static HanLPTokenizerFactory getStoreTokenizerFactory(IndexSettings indexSettings, Environment env, String name, Settings settings) {
+        return new HanLPTokenizerFactory(indexSettings, env, name, settings, ConfigHelper.STORE_CONFIG);
+    }
+
+    public static HanLPTokenizerFactory getSearchTokenizerFactory(IndexSettings indexSettings, Environment env, String name, Settings settings) {
+        return new HanLPTokenizerFactory(indexSettings, env, name, settings, ConfigHelper.SEARCH_CONFIG);
+    }
+
     @Override
     public Tokenizer create() {
         return new HanLPTokenizer(tuple.v1(), tuple.v2(), true);
