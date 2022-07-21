@@ -68,7 +68,7 @@ public class ConfigHelper {
 
     public static final HanLPConfig SEARCH_CONFIG = new HanLPConfig(){{
         setAlgorithm("viterbi");
-        setEnableIndexMode(true);
+        setEnableIndexMode(false);
         setCustomDictionaryPath("");
         setEnableCustomDictionary(true);
         setEnableCustomDictionaryForcing(false);
