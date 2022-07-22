@@ -52,7 +52,7 @@ public class ConfigHelper {
         setEnableIndexMode(false);
         setCustomDictionaryPath("");
         setEnableCustomDictionary(true);
-        setEnableCustomDictionaryForcing(true);
+        setEnableCustomDictionaryForcing(false);
 
         setEnableStopWord(false);
         setStopWordDictionaryPath("");
@@ -71,7 +71,7 @@ public class ConfigHelper {
         setEnableIndexMode(false);
         setCustomDictionaryPath("");
         setEnableCustomDictionary(true);
-        setEnableCustomDictionaryForcing(true);
+        setEnableCustomDictionaryForcing(false);
 
         setEnableStopWord(false);
         setStopWordDictionaryPath("");
