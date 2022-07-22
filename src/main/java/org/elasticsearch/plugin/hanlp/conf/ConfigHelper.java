@@ -48,7 +48,7 @@ public class ConfigHelper {
     }};
 
     public static final HanLPConfig STORE_CONFIG = new HanLPConfig(){{
-        setAlgorithm("crf");
+        setAlgorithm("viterbi");
         setEnableIndexMode(false);
         setCustomDictionaryPath("");
         setEnableCustomDictionary(true);
@@ -67,7 +67,7 @@ public class ConfigHelper {
     }};
 
     public static final HanLPConfig SEARCH_CONFIG = new HanLPConfig(){{
-        setAlgorithm("crf");
+        setAlgorithm("viterbi");
         setEnableIndexMode(false);
         setCustomDictionaryPath("");
         setEnableCustomDictionary(true);
