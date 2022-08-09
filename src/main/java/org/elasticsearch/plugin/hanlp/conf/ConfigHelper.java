@@ -68,7 +68,7 @@ public class ConfigHelper {
 
     public static final HanLPConfig SEARCH_CONFIG = new HanLPConfig(){{
         setAlgorithm("viterbi");
-        setEnableIndexMode(true);
+        setEnableIndexMode(false);
         setCustomDictionaryPath("");
         setEnableCustomDictionary(true);
         setEnableCustomDictionaryForcing(false);
@@ -77,12 +77,12 @@ public class ConfigHelper {
         setStopWordDictionaryPath("");
 
         setEnableNameRecognize(true);
-        setEnableJapaneseNameRecognize(false);
+        setEnableJapaneseNameRecognize(true);
         setEnableTranslatedNameRecognize(true);
         setEnableNumberQuantifierRecognize(true);
         setEnableOrganizationRecognize(true);
         setEnablePlaceRecognize(true);
-        setEnableTraditionalChineseMode(false);
+        setEnableTraditionalChineseMode(true);
     }};
 
     public static final HanLPConfig SMART_CONFIG = new HanLPConfig(){{
